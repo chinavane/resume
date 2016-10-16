@@ -104,7 +104,7 @@ gulp.task('packjs',function(){
   return gulp.src(jsFiles)
   .pipe(named())
   .pipe(webpack())
-  .pipe(uglify())
+  //.pipe(uglify())
   .pipe(gulp.dest('www/js'))
 })
 
