@@ -1,4 +1,5 @@
 var $ = require('./zepto');
+require('./ajax');
 require('./event');
 require('./form');
 require('./ie');
