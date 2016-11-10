@@ -30,14 +30,16 @@ var sequence = require('gulp-watch-sequence');
 //压缩html
 var minifyHTML = require('gulp-minify-html');
 
-
+// task,src,dest,watch,pipe,run
 gulp.task('webserver', function() {
   gulp.src('www')
     .pipe(webserver({
       livereload: true,
-      directoryListing: true,
+      directoryListing: false,
       open: true,
 
+      // b2b c2b b2c o2c b2b2c
+      // http://www.b2c.com/productList/category-12/page-32
 
       //实现我们的Mock数据它的原理是
       //1.用户在浏览器里输入url地址，比如说http://localhost/queryList

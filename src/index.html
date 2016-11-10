@@ -1,49 +1,42 @@
 <html>
 <head>
-	<title>个人简历</title>
+	<title>resume project</title>
 	<meta name="viewport" content="initial-scale=1">
-	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+
 </head>
 <body>
+	<!-- swiper操作区 -->
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1
+            	<p class="ani" swiper-animate-effect="flash" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">内容</p>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3
 
-<span id="preload">loading</span>
-
-
-<!-- Swiper -->
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-        	<p class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">内容</p>
-        </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">
-        	Slide 3
-        	<button id="enter"> 点击体验 </button>
+            	<button id="enter">点击体验</button>
+            </div>
         </div>
     </div>
-</div>
 
 
-<div id="mainContent">
-	<div id="header">iScroll</div>
-
-	<div id="wrapper">
-		<div id="scroller">
-			<ul></ul>
+    <!-- iscroll 操作区 -->
+    <div id="myIscroll">
+	    <div id="header">iScroll</div>
+		<div id="wrapper">
+			<div id="scroller">
+				<ul></ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="skill">技能</div>
+			<div id="project">项目</div>
+			<div id="work">经历</div>
+			<div id="my">我的</div>
 		</div>
 	</div>
 
-	<div id="footer">
-		<div class="button" id="skill">技能</div>
-		<div class="button" id="project">作品</div>
-		<div class="button" id="work">经历</div>
-		<div class="button" id="interest">兴趣</div>
-		<div class="button" id="my">我的</div>
-	</div>
-</div>
-
-
-<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
